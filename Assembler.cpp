@@ -20,7 +20,6 @@ map<string,string> opcodeTable = {
     {"LSL","11001"},
     {"LSR","11010"},
     {"ASR","11011"},
-    {"ADD","10000"},
     {"PUSH","01000"},
     {"PUSHM","01001"},
     {"POP","01010"},
@@ -30,7 +29,7 @@ map<string,string> opcodeTable = {
     {"JZ","00101"},
     {"JNZ","00110"},
     {"LOAD","00000"},
-    {"STORE","00001"},
+    {"STORE","00001"}
 };
 
 set<string> immediateInstructions = {"PUSH","PUSHM","POPM","JMP","JZ","JNZ","LOAD","STORE"};
