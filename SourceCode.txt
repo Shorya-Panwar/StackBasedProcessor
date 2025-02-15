@@ -1,0 +1,25 @@
+# Code to check if number at top of stack is prime
+
+PUSH 11
+STORE [1]
+
+DUP
+
+PUSH 1
+SUB
+STORE [2]
+PUSH 1
+CMP
+JZ 17
+PUSHM [2]
+MOD
+JZ 15
+
+PUSHM [1]
+PUSHM [2]
+JMP 3
+
+PUSH 0
+JMP 18
+PUSH 1
+DUP
